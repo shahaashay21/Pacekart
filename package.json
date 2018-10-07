@@ -1,0 +1,26 @@
+{
+  "name": "pacekart",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "nodemon --exec 'mocha --recursive -R min'"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "csurf": "^1.9.0",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "helmet": "^3.13.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.3.1",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0",
+    "supertest-session": "^3.3.0"
+  }
+}
