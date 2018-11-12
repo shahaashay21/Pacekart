@@ -1,5 +1,5 @@
-var indexController = require('../controllers/index_controller');
-var usersController = require('../controllers/users_controller');
+var indexController = require('../controllers');
+var usersController = require('../controllers/users');
 
 module.exports = (app) => {
 
@@ -12,6 +12,7 @@ module.exports = (app) => {
 	   Pacekart
     -----------*/
     app.get('/', indexController.index);
+    app.get('/getuser', usersController.getUser);
 
     /*-----------
 		APIs
